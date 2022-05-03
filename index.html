@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swiper test</title>
+	<style>
+		body {
+			background-color: crimson;
+		}
+		.text {
+			background-color: aqua;
+			color: crimson;
+		}
+		.button {
+			background-color: blue;
+		}
+	</style>
+	<script>
+		var swipes = 0;
+		function swipe() {
+			swipes++
+		}
+		function see_swipes() {
+			alert(swipes);
+		}
+	</script>
+</head>
+<body>
+	<button value="swipe object" onMouseOut="swipe()"/>
+	<p class="text">swipe me!!!</p>
+	<button value="see" onClick="see_swipes()"/>
+	<p class="text">see swipes!!!</p>
+</body>
+</html>
